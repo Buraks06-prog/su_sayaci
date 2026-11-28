@@ -35,4 +35,10 @@ void main() {
     sayac.sifirla();
     expect(sayac.bardak, 0);
   });
+
+    test('azalt() sıfırın altına düşmez', () {
+    final sayac = SuSayaci();
+    sayac.azalt();
+    expect(sayac.bardak, 0);
+  });
 }

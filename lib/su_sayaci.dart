@@ -26,8 +26,10 @@ class SuSayaci {
     _bardak++;
   }
 
-  void azalt() {
-    _bardak--;
+   void azalt() {
+    if (_bardak > 0) {
+      _bardak--;
+    }
   }
 
   void sifirla() {
