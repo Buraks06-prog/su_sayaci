@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'mesaj_karti.dart';
 import 'su_sayaci.dart';
 import 'tema.dart';
 
@@ -63,6 +64,8 @@ class _AnaEkranState extends State<AnaEkran> {
                   ),
                 ],
               ),
+              const SizedBox(height: 32),
+              MesajKarti(ilerleme: _sayac.ilerleme),
               const SizedBox(height: 16),
               TextButton.icon(
                 onPressed: () {
