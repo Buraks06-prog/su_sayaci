@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ana_ekran.dart';
 import 'tema.dart';
 
 void main() {
@@ -15,11 +16,7 @@ class SuSayaciUygulamasi extends StatelessWidget {
       title: 'Su Sayacı',
       debugShowCheckedModeBanner: false,
       theme: uygulamaTemasi,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Su Sayacı yakında 💧'),
-        ),
-      ),
+      home: const AnaEkran(),
     );
   }
 }
