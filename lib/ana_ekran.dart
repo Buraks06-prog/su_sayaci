@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'mesaj_karti.dart';
 import 'su_sayaci.dart';
 import 'tema.dart';
 
@@ -63,7 +64,8 @@ class _AnaEkranState extends State<AnaEkran> {
                   ),
                 ],
               ),
-              // BURAYA YENİ PARÇALAR EKLENECEK
+              const SizedBox(height: 32),
+              MesajKarti(ilerleme: _sayac.ilerleme),
             ],
           ),
         ),
