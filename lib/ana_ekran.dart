@@ -66,6 +66,16 @@ class _AnaEkranState extends State<AnaEkran> {
               ),
               const SizedBox(height: 32),
               MesajKarti(ilerleme: _sayac.ilerleme),
+              const SizedBox(height: 16),
+              TextButton.icon(
+                onPressed: () {
+                  setState(() {
+                    _sayac.sifirla();
+                  });
+                },
+                icon: const Icon(Icons.refresh),
+                label: const Text('Sıfırla'),
+              ),  
             ],
           ),
         ),
