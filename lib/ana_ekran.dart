@@ -63,7 +63,16 @@ class _AnaEkranState extends State<AnaEkran> {
                   ),
                 ],
               ),
-              // BURAYA YENİ PARÇALAR EKLENECEK
+              const SizedBox(height: 16),
+              TextButton.icon(
+                onPressed: () {
+                  setState(() {
+                    _sayac.sifirla();
+                  });
+                },
+                icon: const Icon(Icons.refresh),
+                label: const Text('Sıfırla'),
+              ),  
             ],
           ),
         ),
